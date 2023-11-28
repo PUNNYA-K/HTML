@@ -1,0 +1,14 @@
+div     {
+        color:green;
+        }
+h1      {
+        font-weight:normal;
+        letter-spacing:1em;
+        margin-bottom:2em;
+        text-transform:uppercase;
+        }
+p       {
+        font-weight:normal;
+        text-align:center;
+        background-color:pink;
+        }                
