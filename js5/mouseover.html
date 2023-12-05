@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>mouseover</title>
+</head>
+<body>
+<h1 id="pic">Dog</h1><br><br>
+<img id="img1"onmouseover="myfunction()" onmouseout="myfunction2()" src="/home/ksb/Downloads/img1.jpeg">
+<script>
+function myfunction()
+{
+  document.getElementById("img1").src="/home/ksb/Downloads/img2.jpeg";
+  document.getElementById("pic").innerHTML="Cat";
+}
+function myfunction2()
+{
+  document.getElementById("img1").src="/home/ksb/Downloads/img1.jpeg";
+  document.getElementById("pic").innerHTML="Dog";
+}
+</script>
+</body>
+</html>
