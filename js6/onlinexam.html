@@ -1,0 +1,76 @@
+<html>
+<head>
+</head>
+<body>
+<body bgcolor="#839deb">
+<form name ="examForm" onsubmit="return exam()" method="get">
+<center><u><h2>ONLINE EXAM FORM</center></u></h2>
+Enter your name :<input type="text" name="name">
+<p>1)Which decade was the American Institute of Electrical Engineers (AIEE) founded?<br>
+<input type="radio" name="one" value="1850s">1850s<br>
+<input type="radio" name="one" value="1880s">1880s<br>
+<input type="radio" name="one" value="1930s">1930s<br>
+<input type="radio" name="one" value="1950s">1950s<br>
+</p>
+
+<p>2)'OS' computer abbreviation usually means ?
+<br>
+<input type="radio" name="two" value="order of significance">order of significance<br>
+<input type="radio" name="two" value="open software">open software<br>
+<input type="radio" name="two" value="operating system">operating system<br>
+<input type="radio" name="two" value="optical sensor">br<br>
+</p>
+
+
+<p>3) Identify the language which is mainly used for Artificial Intelligence?<br>
+<input type="radio" name="three" value="java">java<br>
+<input type="radio" name="three" value="J2EE">J2EE<br>
+<input type="radio" name="three" value="C">C<br>
+<input type="radio" name="three" value="prolog">prolog<br>
+</p>
+<p>4)Why is a firewall used in a computer?<br>
+<input type="radio" name="four" value="security">security<br>
+<input type="radio" name="four" value="authentication">authentication<br>
+<input type="radio" name="four" value="monitoring">monitoring<br>
+<input type="radio" name="four" value="data transmission">data transmission<br>
+</p>
+
+<p>5)URL stands for _______________<br>
+<input type="radio" name="five" value="uninterrupted data locator">uninterrupted data locator<br>
+<input type="radio" name="five" value="uninterrupted record locator">uninterrupted record locator<br>
+<input type="radio" name="five" value="uniform record locator">uniform record locator<br>
+<input type="radio" name="five" value="uniform resource locator">uniform resource locator<br>
+</p>
+<p>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</center>
+</p>
+<script>
+function exam()
+{
+var m=0;
+if(document.examForm.name.value=="" || document.examForm.name.value==null)
+{
+    alert("Name can't be blank");
+    return false;
+    }
+
+
+if(document.examForm.one.value=="1880s")
+m=m+1;
+if(document.examForm.two.value=="operating system")
+m=m+1;
+if(document.examForm.three.value=="prolog")
+m=m+1;
+if(document.examForm.four.value=="security")
+m=m+1;
+if(document.examForm.five.value=="uniform resource locator")
+m=m+1;
+alert("Thank you for taking the online exam !! \n your score is :"+m+"out of 5");
+}
+</script>
+</body>
+</html>
+
